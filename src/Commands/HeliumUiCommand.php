@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Webup\HeliumUi\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class HeliumUiCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'helium-ui';
 
     public $description = 'My command';
 
