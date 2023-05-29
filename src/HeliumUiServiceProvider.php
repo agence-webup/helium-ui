@@ -2,6 +2,7 @@
 
 namespace Webup\HeliumUi;
 
+use Illuminate\Support\Facades\Blade;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 use Webup\HeliumUi\Commands\HeliumUiCommand;
@@ -18,8 +19,8 @@ class HeliumUiServiceProvider extends PackageServiceProvider
         $package
             ->name('helium-ui')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_helium-ui_table')
-            ->hasCommand(HeliumUiCommand::class);
+            ->hasViews();
+        // ->hasMigration('create_helium-ui_table')
+        // ->hasCommand(HeliumUiCommand::class);
     }
 }
