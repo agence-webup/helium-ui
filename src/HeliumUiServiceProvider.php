@@ -2,10 +2,8 @@
 
 namespace Webup\HeliumUi;
 
-use Illuminate\Support\Facades\Blade;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Webup\HeliumUi\Commands\HeliumUiCommand;
 
 class HeliumUiServiceProvider extends PackageServiceProvider
 {
@@ -22,5 +20,9 @@ class HeliumUiServiceProvider extends PackageServiceProvider
             ->hasViews();
         // ->hasMigration('create_helium-ui_table')
         // ->hasCommand(HeliumUiCommand::class);
+        $this->publishes([
+            __DIR__ . '/../resources/css/' => base_path('resources/css/admin/'),
+            __DIR__ . '/../resources/js/' => base_path('resources/js/admin/'),
+        ], $package->shortName() . '-assets');
     }
 }

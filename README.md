@@ -21,6 +21,11 @@ You can publish the views using
 php artisan vendor:publish --tag="helium-ui-views"
 ```
 
+Those views require some assets, publishable with:
+```bash
+php artisan vendor:publish --tag="helium-ui-assets"
+```
+
 ## Usage
 
 ```blade

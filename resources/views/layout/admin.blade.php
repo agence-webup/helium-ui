@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @yield('css')
-    @vite('resources/css/app.css')
+    @vite('resources/css/admin/app.css')
     <title>Helium</title>
 </head>
 
@@ -28,7 +28,7 @@
             </div>
         </div>
     </main>
-    @vite('resources/js/app.js')
+    @vite('resources/js/admin/app.js')
     @yield('js')
 </body>
 
