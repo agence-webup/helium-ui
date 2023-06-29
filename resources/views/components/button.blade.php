@@ -19,7 +19,7 @@
 
 @isset($href)
     <a href="{{ $href }}" {!! $customAttrs !!}
-        {{ $attributes->merge(['class' => "{$additionalClasses} inline-flex items-center rounded-md border border-transparent px-3 py-1.5 text-sm font-medium leading-4 shadow-sm focus:outline-none focus:ring-2"]) }}>
+        {{ $attributes->merge(['class' => "{$additionalClasses} inline-flex items-center rounded-md border border-transparent px-3.5 py-2 text-sm font-medium leading-4 shadow-sm focus:outline-none focus:ring-2"]) }}>
         @isset($icon)
             <x-dynamic-component :component="$icon" class="mr-1" />
         @endisset
@@ -27,7 +27,7 @@
     </a>
 @else
     <button {!! $customAttrs !!}
-        {{ $attributes->merge(['class' => "{$additionalClasses} inline-flex items-center rounded-md border border-transparent px-3 py-1.5 text-sm font-medium leading-4 shadow-sm focus:outline-none focus:ring-2"]) }}>
+        {{ $attributes->merge(['class' => "{$additionalClasses} inline-flex items-center rounded-md border border-transparent px-3.5 py-2 text-sm font-medium leading-4 shadow-sm focus:outline-none focus:ring-2"]) }}>
         @isset($icon)
             <x-dynamic-component :component="$icon" class="mr-1" />
         @endisset
