@@ -7,6 +7,13 @@
 
 Helium UI publishes reusable TALL components.
 
+## Requirements
+
+```sh
+composer require ryangjchandler/blade-tabler-icons
+npm install @alpine-collective/toolkit @alpinejs/mask alpinejs notyf
+```
+
 ## Installation
 
 You can install the package via composer:
