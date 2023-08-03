@@ -12,7 +12,7 @@
 
 <body class="bg-[#F0F2F4] pb-10 text-base text-slate-800 antialiased">
     <main class="flex">
-        <div class="fixed inset-y-0 left-0 w-64 overflow-auto border-r border-[#E1E6EA] bg-white pt-5 pb-4">
+        <div class="fixed inset-y-0 left-0 w-64 overflow-auto border-r border-[#E1E6EA] bg-white pb-4 pt-5">
             <div class="flex flex-shrink-0 flex-grow flex-col px-3 pb-[70px]">
                 <x-helium-ui::layout.icon class="mb-5 w-10" />
                 <x-helium-ui::menu />

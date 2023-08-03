@@ -1,7 +1,6 @@
-@props(['url' => null, 'current' => false, 'sublevel' => null, 'icon' => null, 'opened'])
+@props(['url' => null, 'current' => false, 'sublevel' => null, 'icon' => null, 'opened' => false])
 
 @php
-    $opened = false;
     $cssCurrent = $current ? 'bg-gray-100' : '';
 @endphp
 

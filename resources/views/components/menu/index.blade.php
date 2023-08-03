@@ -1,6 +1,6 @@
 <div class="space-y-1">
     <x-helium-ui::menu.item url="#" icon="tabler-air-balloon">Menu 1</x-helium-ui::menu.item>
-    <x-helium-ui::menu.item url="#" icon="tabler-artboard">
+    <x-helium-ui::menu.item url="#" icon="tabler-artboard" :opened="true">
         Menu 2
         <x-slot:sublevel>
             <x-helium-ui::menu.sub url="#">Menu 2.1</x-helium-ui::menu.sub>
