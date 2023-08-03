@@ -1,6 +1,11 @@
-@props(['name'])
-<div class="space-x-2">
-    {{ $slot }}
+@props(['name', 'label' => null])
+<div>
+    @isset($label)
+        <label for="{{ $name }}" class="mb-1.5 block">{{ $label }}</label>
+    @endisset
+    <div>
+        {{ $slot }}
+    </div>
 
     @error($name . '*')
         <div class="mt-1 flex items-center text-red-600">

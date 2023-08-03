@@ -1,7 +1,6 @@
 @props(['name', 'label', 'value', 'checked' => false, 'standalone'])
 
-
-<label class="mt-3 inline-flex cursor-pointer items-center">
+<label class="mt-3 flex cursor-pointer items-center">
     <input type="checkbox" name="{{ $name }}" @if ($checked || old($name) === 'on') checked @endif value="{{ $value }}">
     <span class="ml-2">{{ $label }}</span>
 </label>

@@ -12,24 +12,24 @@
             $additionalClasses = 'rounded bg-white px-2 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50';
             break;
         case 'danger':
-            $additionalClasses = 'bg-red-600 hover:bg-red-800 focus:ring-red-500';
+            $additionalClasses = 'bg-[#FCEAEA] text-[#891E1E] border-[#891E1E] border';
             break;
     }
 @endphp
 
 @isset($href)
     <a href="{{ $href }}" {!! $customAttrs !!}
-        {{ $attributes->merge(['class' => "{$additionalClasses} inline-flex items-center rounded-md border border-transparent px-3.5 py-2 text-sm font-medium leading-4 shadow-sm focus:outline-none focus:ring-2"]) }}>
+        {{ $attributes->merge(['class' => "{$additionalClasses} inline-flex items-center rounded-md border px-3.5 py-2 text-sm font-medium leading-4 shadow-sm focus:outline-none focus:ring-2"]) }}>
         @isset($icon)
-            <x-dynamic-component :component="$icon" class="mr-1" />
+            <x-dynamic-component :component="$icon" class="mr-0.5 h-5" />
         @endisset
         {{ $label }}
     </a>
 @else
     <button {!! $customAttrs !!}
-        {{ $attributes->merge(['class' => "{$additionalClasses} inline-flex items-center rounded-md border border-transparent px-3.5 py-2 text-sm font-medium leading-4 shadow-sm focus:outline-none focus:ring-2"]) }}>
+        {{ $attributes->merge(['class' => "{$additionalClasses} inline-flex items-center rounded-md border px-3.5 py-2 text-sm font-medium leading-4 shadow-sm focus:outline-none focus:ring-2"]) }}>
         @isset($icon)
-            <x-dynamic-component :component="$icon" class="mr-1" />
+            <x-dynamic-component :component="$icon" class="mr-0.5 h-5" />
         @endisset
         {{ $label }}
     </button>

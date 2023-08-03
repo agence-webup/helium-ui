@@ -10,13 +10,13 @@
     }
 @endphp
 
-<div class="flex-grow">
+<div>
     @isset($label)
         <label for="{{ $name }}" class="mb-1.5 block">{{ $label }}</label>
     @endisset
 
-    <input {{ $attributes->merge(['class' => "{$additionalClasses} relative rounded-md shadow-sm border w-full"]) }} type="{{ $type }}" id="{{ $id }}" name="{{ $name }}" value="{{ $value }}">
-
+    <textarea {{ $attributes->merge(['class' => "{$additionalClasses} relative rounded-md shadow-sm border w-full"]) }} type="{{ $type }}" id="{{ $id }}" name="{{ $name }}" value="{{ $value }}">
+    </textarea>
     @if (isset($info) && !$errors->has($name))
         <div class="mt-1.5 text-sm text-gray-500">{{ $info }}</div>
     @endif

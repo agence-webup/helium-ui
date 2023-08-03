@@ -4,34 +4,34 @@
     $additionalClasses = '';
     switch ($modifier) {
         case 'gray':
-            $additionalClasses = 'bg-gray-100 text-gray-800';
+            $additionalClasses = 'bg-gray-200 text-gray-800';
             break;
         case 'red':
-            $additionalClasses = 'bg-red-100 text-red-800';
+            $additionalClasses = 'bg-red-200 text-red-800';
             break;
         case 'yellow':
-            $additionalClasses = 'bg-yellow-100 text-yellow-800';
+            $additionalClasses = 'bg-yellow-200 text-yellow-800';
             break;
         case 'green':
-            $additionalClasses = 'bg-green-100 text-green-800';
+            $additionalClasses = 'bg-green-200 text-green-800';
             break;
         case 'blue':
-            $additionalClasses = 'bg-blue-100 text-blue-800';
+            $additionalClasses = 'bg-blue-200 text-blue-800';
             break;
         case 'indigo':
-            $additionalClasses = 'bg-indigo-100 text-indigo-800';
+            $additionalClasses = 'bg-indigo-200 text-indigo-800';
             break;
         case 'purple':
-            $additionalClasses = 'bg-purple-100 text-purple-800';
+            $additionalClasses = 'bg-purple-200 text-purple-800';
             break;
         case 'pink':
-            $additionalClasses = 'bg-pink-100 text-pink-800';
+            $additionalClasses = 'bg-pink-200 text-pink-800';
             break;
         case 'orange':
-            $additionalClasses = 'bg-orange-100 text-orange-800';
+            $additionalClasses = 'bg-orange-200 text-orange-800';
             break;
     }
-
+    
     if ($full) {
         $additionalClasses = $additionalClasses . ' flex justify-center';
     } else {
