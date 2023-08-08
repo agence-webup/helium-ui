@@ -9,7 +9,10 @@
             <div class="ml-3">
                 <div class="font-medium text-gray-700 group-hover:text-gray-900">
                     {{ 'Homer' . ' ' . 'Simpson' }}</div>
-                <button class="flex items-center text-sm" aria-label="Logout" title="Logout" data-submit="logout-form">
+                <button class="flex items-center text-sm"
+                        aria-label="Logout"
+                        title="Logout"
+                        data-submit="logout-form">
                     <span>Se déconnecter</span>
                     <x-tabler-logout class="ml-1 h-5" />
                 </button>
