@@ -15,7 +15,8 @@
         <label for="{{ $name }}" class="mb-1.5 block">{{ $label }}</label>
     @endisset
 
-    <textarea {{ $attributes->merge(['class' => "{$additionalClasses} relative rounded-md shadow-sm border w-full"]) }} type="{{ $type }}" id="{{ $id }}" name="{{ $name }}" value="{{ $value }}">
+    <textarea {{ $attributes->merge(['class' => "{$additionalClasses} relative rounded-md shadow-sm border w-full"]) }}
+        type="{{ $type }}" id="{{ $id }}" name="{{ $name }}" value="{{ $value }}">
     </textarea>
     @if (isset($info) && !$errors->has($name))
         <div class="mt-1.5 text-sm text-gray-500">{{ $info }}</div>
