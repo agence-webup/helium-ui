@@ -37,7 +37,7 @@ php artisan vendor:publish --tag="helium-ui-assets"
 
 ```blade
 <div>
-    <x-helium-ui::wip />
+    <x-hui::wip />
 </div>
 ```
 
